@@ -1,0 +1,39 @@
+# ===================================================
+# Subjects Online — .gitignore
+# ===================================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# OS & Editor files
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs & Temporary files
+*.log
+*.tmp
+*.temp
+all_classes*.json
+clean_classes.json
+tailwind_candidates.json
+all_classes_found.txt
+
+# Build outputs
+dist/
+build/
+.cache/

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — Subjects Online</title>
+
+    <!-- Page Transition Script -->
+    <script src="js/page-transition.js"></script>
+    <link rel="stylesheet" href="css/tailwind-utilities.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/dashboard.css?v=3">
+    <link rel="stylesheet" href="css/mobile-perf.css">
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#020617">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Subjects Online">
+    <link rel="apple-touch-icon" href="images/icon-512.png">
+</head>
+
+<body
+    class="bg-brand-bg font-body antialiased text-brand-textPrimary min-h-screen relative overflow-x-hidden selection:bg-indigo-500/30 selection:text-white">
+
+    <!-- THEME BACKGROUND -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden transition-colors duration-700 app-bg-container">
+        <!-- Main top gradient -->
+        <div class="absolute inset-0 app-bg-top"></div>
+        <!-- Soft glow bottom right -->
+        <div
+            class="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full mix-blend-multiply opacity-50 app-glow-br">
+        </div>
+        <!-- Soft glow top left -->
+        <div
+            class="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full mix-blend-multiply opacity-30 app-glow-tl">
+        </div>
+    </div>
+
+    <!-- Shared Navbar injected by JS -->
+
+    <!-- Main Content -->
+    <main class="relative z-10 w-full">
+
+        <!-- ===== CLEAN MODERN HERO HEADER (FULL SCREEN VIEWPORT) ===== -->
+        <div class="relative hero-container min-h-screen w-full flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+            <!-- Ambient Soft Radial Glow -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[400px] rounded-full opacity-35 pointer-events-none z-0 mix-blend-screen"
+                style="background: radial-gradient(circle, rgba(14,165,233,0.2) 0%, transparent 65%);"></div>
+
+            <div class="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center justify-center py-10">
+                <h1 id="display-name" class="font-heading tracking-tight leading-tight mb-4 cursor-pointer group flex flex-col items-center justify-center gap-2" onclick="window.location.href='profile.html'">
+                    <span class="hero-welcome-label text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight block">Welcome,</span>
+                    <span class="hero-name-glow inline-flex items-center justify-center text-5xl sm:text-7xl lg:text-8xl xl:text-9xl font-black group-hover:underline">
+                        <span id="display-name-text">Student</span>
+                    </span>
+                </h1>
+                <div class="hero-dept-pill inline-flex items-center gap-2.5 px-6 py-2 rounded-full mt-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-sky-500 animate-pulse shadow-[0_0_10px_#0ea5e9]"></span>
+                    <p class="font-heading text-xs sm:text-sm font-bold tracking-[0.2em] text-slate-600 dark:text-slate-300 uppercase m-0">
+                        <span id="display-dept" class="text-sky-600 dark:text-sky-400 font-black">Accounting</span> Department
+                    </p>
+                </div>
+                    <!-- <a href="profile.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/25 hover:bg-sky-500 hover:text-white transition-all shadow-sm">
+                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        Edit Profile ⚙️
+                    </a> -->
+                </div>
+            </div>
+
+            <!-- Scroll Indicator down to main content -->
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 scroll-indicator cursor-pointer"
+                onclick="window.scrollBy({top: window.innerHeight, behavior: 'smooth'})">
+                <div class="flex flex-col items-center gap-0.5 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                    <svg class="w-6 h-6 text-sky-500 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══ WHAT'S INSIDE SECTION ═══ -->
+        <div class="wi-section" id="wi-section">
+            <h2 class="wi-heading" id="wi-heading">
+                <span class="wi-word">What's</span>
+                <span class="wi-word wi-word-accent">Inside</span>
+                <span class="wi-word">Our Platform</span>
+            </h2>
+            <div class="wi-divider" id="wi-divider">
+                <div class="wi-divider-line"></div>
+            </div>
+        </div>
+
+
+
+        <!-- ===== LUXURY EDITORIAL CARDS ===== -->
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 pb-24 pt-4">
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-3 sm:gap-6 mb-16 section-cards">
+
+                <!-- ============ 1. BROWSE ============ -->
+                <a href="browse.html"
+                    class="col-span-2 lg:col-span-8 group relative card-browse rounded-[1.75rem] sm:rounded-[2.5rem] p-5 sm:p-8 md:p-10 overflow-hidden flex flex-col justify-between min-h-[180px] sm:min-h-[300px] md:min-h-[400px]">
+                    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                        <div class="browse-orb orb-1"></div>
+                        <div class="browse-orb orb-2"></div>
+                        <div class="browse-orb orb-3"></div>
+                    </div>
+
+                    <!-- Giant Floating Graphic -->
+                    <div
+                        class="absolute top-1/2 right-4 sm:right-10 -translate-y-1/2 pointer-events-none opacity-40 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700 blur-[2px] sm:blur-[4px] group-hover:blur-0 transform group-hover:-rotate-12">
+                        <span class="text-7xl sm:text-[12rem] md:text-[16rem] leading-none drop-shadow-2xl">🌍</span>
+                    </div>
+
+                    <div class="relative z-10 flex justify-between items-start w-full">
+                        <div
+                            class="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center text-white group-hover:bg-white/30 transition-colors shadow-lg">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-500"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 mt-auto flex items-end justify-between w-full">
+                        <div>
+                            <h2
+                                class="font-heading text-3xl sm:text-6xl md:text-7xl lg:text-8xl text-white font-black tracking-tighter drop-shadow-2xl group-hover:scale-105 origin-bottom-left transition-transform duration-500">
+                                Browse</h2>
+                        </div>
+                        <div
+                            class="text-white text-right bg-white/10 backdrop-blur-md border border-white/20 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 shadow-lg group-hover:bg-white/20 transition-colors">
+                            <span class="block font-heading text-xl sm:text-3xl font-black" id="card-lib-count">7</span>
+                            <span
+                                class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold opacity-80">Subjects</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ============ 2. LIBRARY ============ -->
+                <a href="library.html"
+                    class="col-span-1 lg:col-span-4 group relative card-library rounded-[1.75rem] sm:rounded-[2.5rem] p-4 sm:p-8 md:p-10 overflow-hidden flex flex-col justify-between min-h-[170px] sm:min-h-[300px] md:min-h-[400px]">
+                    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                        <div class="card-orb"></div>
+                    </div>
+
+                    <div
+                        class="absolute bottom-4 right-0 pointer-events-none opacity-30 sm:opacity-40 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700 blur-[2px] group-hover:blur-0 translate-x-1/4">
+                        <span class="text-6xl sm:text-[14rem] leading-none drop-shadow-2xl">📚</span>
+                    </div>
+
+                    <div class="relative z-10 flex justify-between items-start w-full">
+                        <div
+                            class="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center text-white shadow-lg">
+                            <svg class="w-4 h-4 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                        </div>
+                        <div class="text-white text-right">
+                            <span class="block font-heading text-2xl sm:text-4xl font-black"
+                                id="card-my-lib-count">0</span>
+                            <span
+                                class="text-[8px] sm:text-[9px] uppercase tracking-widest font-bold opacity-80">Items</span>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 mt-auto w-full">
+                        <p
+                            class="text-white/80 uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[8px] sm:text-[10px] font-bold mb-0.5 sm:mb-2">
+                            Collection</p>
+                        <h2
+                            class="font-heading text-2xl sm:text-5xl md:text-6xl text-white font-black tracking-tighter drop-shadow-2xl group-hover:scale-105 origin-bottom-left transition-transform duration-500">
+                            Library</h2>
+                    </div>
+                </a>
+
+                <!-- ============ 3. ESSAYS ============ -->
+                <a href="essays.html"
+                    class="col-span-1 lg:col-span-4 group relative card-essays rounded-[1.75rem] sm:rounded-[2.5rem] p-4 sm:p-8 md:p-10 overflow-hidden flex flex-col justify-between min-h-[170px] sm:min-h-[260px] md:min-h-[320px]">
+                    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                        <div class="card-orb"></div>
+                    </div>
+
+                    <!-- <span
+                        class="absolute top-3 sm:top-6 right-3 sm:right-6 px-2.5 sm:px-4 py-1 rounded-full bg-amber-900/40 backdrop-blur-md text-amber-200 border border-amber-500/30 text-[8px] sm:text-[9px] uppercase tracking-widest font-bold shadow-lg z-20">Premium</span> -->
+
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 sm:opacity-30 group-hover:opacity-80 group-hover:scale-110 transition-all duration-700 blur-[2px] sm:blur-[4px]">
+                        <span class="text-6xl sm:text-[12rem] leading-none drop-shadow-2xl">✍️</span>
+                    </div>
+
+                    <div class="relative z-10 w-full">
+                        <div
+                            class="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center text-white shadow-lg mb-2 sm:mb-4">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 mt-auto flex items-end justify-between w-full">
+                        <div>
+                            <p
+                                class="text-white/80 uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[8px] sm:text-[9px] font-bold mb-0.5">
+                                Insights</p>
+                            <h2
+                                class="font-heading text-2xl sm:text-4xl text-white font-black tracking-tighter drop-shadow-xl">
+                                Essays</h2>
+                        </div>
+                        <div class="text-white text-right">
+                            <span class="block font-heading text-xl sm:text-2xl font-black"
+                                id="card-essays-count">4</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ============ 4. FAVORITES ============ -->
+                <a href="favorites.html"
+                    class="col-span-1 lg:col-span-4 group relative card-favorites rounded-[1.75rem] sm:rounded-[2.5rem] p-4 sm:p-8 md:p-10 overflow-hidden flex flex-col justify-between min-h-[170px] sm:min-h-[260px] md:min-h-[320px]">
+                    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                        <div class="card-orb"></div>
+                    </div>
+
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 sm:opacity-30 group-hover:opacity-80 group-hover:scale-110 transition-all duration-700 blur-[2px] sm:blur-[4px]">
+                        <span class="text-6xl sm:text-[12rem] leading-none drop-shadow-2xl">❤️</span>
+                    </div>
+
+                    <div class="relative z-10 w-full">
+                        <div
+                            class="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center text-white shadow-lg mb-2 sm:mb-4">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 mt-auto flex items-end justify-between w-full">
+                        <div>
+                            <p
+                                class="text-white/80 uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[8px] sm:text-[9px] font-bold mb-0.5">
+                                </p>
+                            <h2
+                                class="font-heading text-2xl sm:text-4xl text-white font-black tracking-tighter drop-shadow-xl">
+                                Favorites</h2>
+                        </div>
+                        <div class="text-white text-right">
+                            <span class="block font-heading text-xl sm:text-2xl font-black" id="card-fav-count">0</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ============ 5. COMMUNITY ============ -->
+                <a href="community.html"
+                    class="col-span-1 lg:col-span-4 group relative card-community rounded-[1.75rem] sm:rounded-[2.5rem] p-4 sm:p-8 md:p-10 overflow-hidden flex flex-col justify-between min-h-[170px] sm:min-h-[260px] md:min-h-[320px]">
+                    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                        <div class="card-orb"></div>
+                    </div>
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 sm:opacity-30 group-hover:opacity-80 group-hover:scale-110 transition-all duration-700 blur-[2px] sm:blur-[4px]">
+                        <span class="text-6xl sm:text-[12rem] leading-none drop-shadow-2xl">💬</span>
+                    </div>
+
+                    <div class="relative z-10 w-full">
+                        <div
+                            class="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center text-white shadow-lg mb-2 sm:mb-4">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 mt-auto flex items-end justify-between w-full">
+                        <div>
+                            <p
+                                class="text-white/80 uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[8px] sm:text-[9px] font-bold mb-0.5">
+                                Share</p>
+                            <h2
+                                class="font-heading text-2xl sm:text-4xl text-white font-black tracking-tighter drop-shadow-xl">
+                                Community</h2>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- ═══ TRACK YOUR GROWTH SECTION ═══ -->
+            <div class="wi-section wi-section-alt" id="tyg-section">
+                <h2 class="wi-heading" id="tyg-heading">
+                    <span class="wi-word">Track</span>
+                    <span class="wi-word wi-word-accent-alt">Your</span>
+                    <span class="wi-word">Growth</span>
+                </h2>
+                <div class="wi-divider" id="tyg-divider">
+                    <div class="wi-divider-line wi-divider-line-alt"></div>
+                </div>
+            </div>
+
+            <!-- ════════ BENTO BOX DASHBOARD ════════ -->
+            <div class="grid grid-cols-1 md:grid-cols-12 auto-rows-auto gap-6 mb-32 bento-grid">
+
+                <!-- 1. Analytics (Spans full width) -->
+                <div
+                    class="bento-card bento-card-analytics md:col-span-12 flex flex-col p-8 sm:p-10 relative overflow-hidden group">
+
+
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-8">
+                            <h2 class="font-heading text-brand-textPrimary font-bold flex items-center gap-4 text-xl">
+                                <span class="bento-icon-glow"
+                                    style="color: #3b82f6; box-shadow: 0 0 20px rgba(59,130,246,0.4);">
+                                    <svg class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                    </svg>
+                                </span>
+                                Analytics
+                            </h2>
+                            <div class="text-right">
+                                <div class="text-3xl font-heading font-black bento-gradient-text"
+                                    style="background-image: linear-gradient(to right, #3b82f6, #0ea5e9);"
+                                    id="bento-total-score">0<span class="text-xl opacity-50">%</span></div>
+                                <div
+                                    class="text-[10px] font-bold text-brand-textSecondary uppercase tracking-[0.2em] mt-1">
+                                    Total Score</div>
+                            </div>
+                        </div>
+
+                        <!-- Horizontal Glowing Bars injected here -->
+                        <div class="flex-1 flex flex-col justify-center gap-6 mt-4" id="bento-analytics-bars">
+                            <!-- JS injected -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Study Planner (Spans full width) -->
+                <div
+                    class="bento-card bento-card-planner md:col-span-12 flex flex-col p-8 sm:p-10 relative overflow-hidden group">
+
+
+                    <div class="relative z-10 flex flex-col h-full max-h-[500px]">
+                        <h2 class="font-heading text-brand-textPrimary font-bold flex items-center gap-4 text-xl mb-8">
+                            <span class="bento-icon-glow"
+                                style="color: #8b5cf6; box-shadow: 0 0 20px rgba(139,92,246,0.4);">
+                                <svg class="w-6 h-6 text-purple-500" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                                </svg>
+                            </span>
+                            Command Center
+                        </h2>
+
+                        <form id="planner-form" class="mb-6 relative z-20">
+                            <div class="relative flex items-center group/input">
+                                <div class="absolute left-4 flex items-center pointer-events-none">
+                                    <div class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></div>
+                                </div>
+                                <input type="text" id="planner-input" placeholder="Execute new directive..."
+                                    class="bento-cmd-input">
+                                <button type="submit" class="absolute right-2 bento-cmd-btn">
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+
+                        <div id="planner-list"
+                            class="flex flex-col overflow-y-auto pr-2 custom-scrollbar flex-1 relative z-10 -mx-4 px-4 pb-4">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- close max-w-7xl wrapper -->
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Firebase SDK & Sync -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/sync.js"></script>
+    <script src="js/shared-nav.js?v=3"></script>
+    <script src="js/premium-effects.js"></script>
+    <script src="js/gsap-animations.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/pwa.js"></script>
+</body>
+
+</html>
