@@ -417,11 +417,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'Statistics and Computer Lab': ['Dr. Laila Mansour', 'Dr. Ahmed Nour', 'Dr. Khaled Ibrahim'],
         'Quantitative Analysis Techniques': ['Dr. Tarek Mahmoud', 'Dr. Laila Mansour', 'Dr. Mohamed Hassan'],
 
-        'Political Systems and Political Life': ['Dr. Hassan El-Sayed', 'Dr. Sara Khalil', 'Dr. Mona Reda'],
-        'Public International Law': ['Dr. Ahmed Nour', 'Dr. Khaled Ibrahim', 'Dr. Rania Mahmoud'],
-        'Diplomatic History': ['Dr. Sara Khalil', 'Dr. Hassan El-Sayed', 'Dr. Mohamed Hassan'],
-        'Management of Governmental Organizations': ['Dr. Mona Reda', 'Dr. Hassan El-Sayed', 'Dr. Tarek Mahmoud'],
-
         'Ports and Customs Management': ['Dr. Khaled Ibrahim', 'Dr. Tarek Mahmoud', 'Dr. Mohamed Hassan']
     };
 
@@ -782,7 +777,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'Business Administration': ['Strategic Management', 'Marketing Analytics', 'Operations Research', 'HR Management', 'Corporate Finance'],
         'Economics': ['Macroeconomics Analysis', 'International Trade', 'Public Finance', 'Econometrics', 'Monetary Policy'],
         'Statistics': ['Applied Linear Models', 'Probability Theory II', 'Statistical Computing', 'Demography', 'Sample Survey Design'],
-        'Political Science': ['International Relations', 'Comparative Politics', 'Public Administration', 'Political Thought', 'Foreign Policy'],
         'Financial & Customs Studies': ['Customs Valuation', 'International Logistics', 'Financial Markets', 'Tariff Systems', 'Trade Finance']
     };
 
