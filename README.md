@@ -11,7 +11,9 @@ An upgraded, refined, and optimized version of the Subjects Online platform. Thi
 ## Tech Stack
 
 • Programming Language: HTML5 , CSS3 , JavaScript
+
 • Styling: CSS / Modern UI
+
 • Version Control: Git & GitHub
 
 ## Project Structure
