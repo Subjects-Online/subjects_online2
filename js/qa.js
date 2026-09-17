@@ -198,9 +198,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let total = 0;
         let done  = 0;
         chapters.forEach(ch => {
-            (ch.lectures || []).forEach(lec => {
-                total++;
-                if (completed[subjectId + '_' + lec.id]) done++;
+            const wList = (ch.weeks && ch.weeks.length > 0) ? ch.weeks : [{ lectures: ch.lectures || [] }];
+            wList.forEach(w => {
+                (w.lectures || []).forEach(lec => {
+                    total++;
+                    if (completed[subjectId + '_' + lec.id]) done++;
+                });
             });
         });
 
@@ -223,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const offlineLib = JSON.parse(localStorage.getItem('so_offline_library') || '[]');
 
     // Flat list of all lectures to easily find next lecture
-    const allLecturesList = chapters.flatMap(ch => ch.lectures || []);
+    const allLecturesList = chapters.flatMap(ch => (ch.weeks && ch.weeks.length > 0) ? ch.weeks.flatMap(w => w.lectures || []) : (ch.lectures || []));
 
     const html = chapters.map((ch, chIndex) => {
         const weeks = ch.weeks && ch.weeks.length > 0 ? ch.weeks : [
@@ -370,7 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     '</div>' +
                     '<div class="chap-meta-item shadow-sm border border-' + THEME_COLOR + '-50/50">' +
                         '<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>' +
-                        (ch.lectures || []).length + ' Lectures' +
+                        weeks.reduce((acc, w) => acc + (w.lectures || []).length, 0) + ' Q&A Items' +
                     '</div>' +
                     (ch.time ? (
                     '<div class="chap-meta-item shadow-sm border border-' + THEME_COLOR + '-50/50">' +

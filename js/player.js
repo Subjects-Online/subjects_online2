@@ -11,9 +11,80 @@ document.addEventListener('DOMContentLoaded', () => {
     const type = params.get('type') || 'video';
     const url = params.get('url');
     const title = params.get('title') || 'Lecture Video';
-    const lecId = params.get('id');
-    const subjectId = params.get('subjectId');
     const sec = params.get('sec') || 'chapters';
+
+    let subjectId = params.get('subjectId');
+    let lecId = params.get('lecId');
+
+    // Handle parameter naming variations:
+    // chapters.js / quizzes.js pass ?id=<subjectId>&lecId=<lecId>
+    // player.js internal links might pass ?id=<lecId>&subjectId=<subjectId>
+    if (params.get('lecId')) {
+        lecId = params.get('lecId');
+        if (!subjectId) subjectId = params.get('id');
+    } else if (params.get('subjectId')) {
+        subjectId = params.get('subjectId');
+        if (!lecId) lecId = params.get('id');
+    } else if (params.get('id')) {
+        const cand = params.get('id');
+        let isSubject = false;
+        if (typeof MATERIALS !== 'undefined') {
+            for (const d in MATERIALS) {
+                if (MATERIALS[d].some(m => m.id === cand)) {
+                    isSubject = true;
+                    break;
+                }
+            }
+        }
+        if (isSubject) {
+            subjectId = cand;
+        } else {
+            lecId = cand;
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 3. Find Subject in MATERIALS (with fallback by URL or lecId)
+    // ---------------------------------------------------------
+    let currentSubject = null;
+    if (typeof MATERIALS !== 'undefined') {
+        if (subjectId) {
+            for (const dept in MATERIALS) {
+                const found = MATERIALS[dept].find(m => m.id === subjectId);
+                if (found) { currentSubject = found; break; }
+            }
+        }
+
+        // Auto-detect subject if subjectId was missing or invalid
+        if (!currentSubject) {
+            for (const dept in MATERIALS) {
+                for (const subj of MATERIALS[dept]) {
+                    if (!subj.content) continue;
+                    for (const sKey in subj.content) {
+                        const chaps = subj.content[sKey] || [];
+                        for (const ch of chaps) {
+                            const weeks = (ch.weeks && ch.weeks.length > 0) ? ch.weeks : [{ lectures: ch.lectures || [] }];
+                            for (const w of weeks) {
+                                for (const l of (w.lectures || [])) {
+                                    if ((url && l.url === url) || (lecId && String(l.id) === String(lecId))) {
+                                        currentSubject = subj;
+                                        subjectId = subj.id;
+                                        if (!lecId) lecId = l.id;
+                                        break;
+                                    }
+                                }
+                                if (currentSubject) break;
+                            }
+                            if (currentSubject) break;
+                        }
+                        if (currentSubject) break;
+                    }
+                    if (currentSubject) break;
+                }
+                if (currentSubject) break;
+            }
+        }
+    }
 
     const storeMap = {
         chapters: 'soCompletedLectures',
@@ -48,17 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const playlistProgressFill = document.getElementById('playlist-progress-fill');
     const playlistCourseTitle = document.getElementById('playlist-course-title');
 
-    // ---------------------------------------------------------
-    // 3. Find Subject in MATERIALS
-    // ---------------------------------------------------------
-    let currentSubject = null;
-    if (typeof MATERIALS !== 'undefined' && subjectId) {
-        for (const dept in MATERIALS) {
-            const found = MATERIALS[dept].find(m => m.id === subjectId);
-            if (found) { currentSubject = found; break; }
-        }
-    }
-
     // Set header text
     if (title) {
         if (videoHeadingTitle) videoHeadingTitle.textContent = title;
@@ -83,30 +143,52 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ---------------------------------------------------------
-    // 4. Build Weeks & Video Lectures (NO PDFs!)
+    // 4. Build Weeks & Video Lectures (Traverses ch.weeks & ch.lectures)
     // ---------------------------------------------------------
     function getWeeksData() {
         if (!currentSubject || !currentSubject.content) return [];
         const content = currentSubject.content;
         const rawChapters = content[sec] || content.chapters || [];
 
-        return rawChapters.map((ch, idx) => {
-            const weekNum = ch.num !== undefined ? ch.num : (idx + 1);
-            const weekTitle = ch.title && ch.title.trim() ? ch.title.trim() : '';
+        const allWeeks = [];
+        rawChapters.forEach((ch, chIdx) => {
+            const chNum = ch.num !== undefined ? ch.num : (chIdx + 1);
+            const chTitle = ch.title && ch.title.trim() && ch.title.trim() !== 'NA' ? ch.title.trim() : '';
 
-            // Filter out PDFs — only keep videos
-            const videoLectures = (ch.lectures || []).filter(l => {
-                const isPdf = l.type === 'pdf' || (l.url && l.url.toLowerCase().endsWith('.pdf'));
-                return !isPdf;
+            // In MATERIALS, lectures are inside ch.weeks[].lectures or directly on ch.lectures
+            const weeksList = (ch.weeks && ch.weeks.length > 0) ? ch.weeks : [
+                { num: chNum, title: chTitle, lectures: ch.lectures || [] }
+            ];
+
+            weeksList.forEach((w, wIdx) => {
+                const weekNum = w.num !== undefined ? w.num : (wIdx + 1);
+                const wTitle = w.title && w.title.trim() && w.title.trim() !== 'm-d' && w.title.trim() !== 'NA' ? w.title.trim() : '';
+
+                // Filter out PDFs — only keep videos
+                const videoLectures = (w.lectures || []).filter(l => {
+                    const isPdf = l.type === 'pdf' || (l.url && l.url.toLowerCase().endsWith('.pdf'));
+                    return !isPdf;
+                });
+
+                let displayName = `Week ${weekNum}`;
+                if (wTitle) {
+                    displayName += ` – ${wTitle}`;
+                } else if (chTitle && rawChapters.length > 1) {
+                    displayName += ` (${chTitle})`;
+                }
+
+                allWeeks.push({
+                    uniqueId: `ch${chNum}-wk${weekNum}-${wIdx}`,
+                    chapterNum: chNum,
+                    num: weekNum,
+                    title: wTitle,
+                    displayName: displayName,
+                    lectures: videoLectures
+                });
             });
-
-            return {
-                num: weekNum,
-                title: weekTitle,
-                displayName: weekTitle ? `Week ${weekNum} – ${weekTitle}` : `Week ${weekNum}`,
-                lectures: videoLectures
-            };
         });
+
+        return allWeeks;
     }
 
     function getAllCourseVideos() {
@@ -121,10 +203,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ---------------------------------------------------------
-    // 5. Previous & Next Navigation
+    // 5. Previous & Next Navigation (Strict Priority: lecId > title > url)
     // ---------------------------------------------------------
+    function isCurrentVideo(v) {
+        if (lecId && v.id !== undefined && v.id !== null) {
+            return String(v.id) === String(lecId);
+        }
+        if (title && v.title) {
+            return v.title.trim().toLowerCase() === title.trim().toLowerCase();
+        }
+        if (url && v.url) {
+            return v.url === url;
+        }
+        return false;
+    }
+
     const allVideos = getAllCourseVideos();
-    const currentIndex = allVideos.findIndex(v => String(v.id) === String(lecId) || v.url === url);
+    let currentIndex = allVideos.findIndex(v => isCurrentVideo(v));
+    if (currentIndex === -1 && url) {
+        currentIndex = allVideos.findIndex(v => v.url === url);
+    }
     const prevLec = currentIndex > 0 ? allVideos[currentIndex - 1] : null;
     const nextLec = currentIndex >= 0 && currentIndex < allVideos.length - 1 ? allVideos[currentIndex + 1] : null;
 
@@ -506,7 +604,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const total = vids.length;
             const allDone = total > 0 && done === total;
             const partial = done > 0 && done < total;
-            const hasCurrent = vids.some(l => String(l.id) === String(lecId) || l.url === url);
+            const hasCurrent = vids.some(l => isCurrentVideo(l));
 
             // Progress icon
             let icon;
@@ -526,7 +624,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Lessons
             const lessons = vids.map(lec => {
-                const isCur = String(lec.id) === String(lecId) || lec.url === url;
+                const isCur = isCurrentVideo(lec);
                 const isDone = !!store[subjectId + '_' + lec.id];
                 return `
                     <div class="lesson-item ${isCur ? 'is-current' : ''}" onclick="navigateToLecture('${lec.id}','${encodeURIComponent(lec.title)}','video','${encodeURIComponent(lec.url)}')">
@@ -538,9 +636,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>`;
             }).join('');
 
+            const weekDomId = `wk-${week.uniqueId || week.num}`;
             return `
-                <div class="week-card ${hasCurrent ? 'open active-week' : ''}" id="wk-${week.num}">
-                    <div class="week-header" onclick="toggleWeek('wk-${week.num}')">
+                <div class="week-card ${hasCurrent ? 'open active-week' : ''}" id="${weekDomId}">
+                    <div class="week-header" onclick="toggleWeek('${weekDomId}')">
                         <div class="week-header-left">
                             ${icon}
                             <span class="week-name">${esc(week.displayName)}</span>
@@ -573,7 +672,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.navigateToLecture = (id, t, tp, u) => {
-        window.location.href = `player.html?id=${id}&subjectId=${subjectId || ''}&type=video&url=${u}&title=${t}&sec=${sec}`;
+        const encU = encodeURIComponent(decodeURIComponent(u));
+        const encT = encodeURIComponent(decodeURIComponent(t));
+        window.location.href = `player.html?id=${subjectId || ''}&subjectId=${subjectId || ''}&lecId=${id}&type=video&url=${encU}&title=${encT}&sec=${sec}`;
     };
 
     // Initial render
@@ -588,11 +689,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function fmt(s) {
         if (!s || isNaN(s)) return '0:00';
         const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = Math.floor(s % 60);
-        return h > 0 ? `${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}` : `${m}:${String(sec).padStart(2,'0')}`;
+        return h > 0 ? `${h}:${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}` : `${m}:${String(sec).padStart(2, '0')}`;
     }
 
     function esc(t) {
         if (!t) return '';
-        return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+        return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
     }
 });

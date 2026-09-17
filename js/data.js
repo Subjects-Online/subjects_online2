@@ -39,39 +39,169 @@ const MATERIALS = {
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        num: 2, title: "", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -80,55 +210,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
          },
@@ -137,55 +410,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -194,55 +610,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
          },
@@ -251,55 +810,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
          },
@@ -308,55 +1010,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
          },
@@ -365,55 +1210,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
          },
@@ -424,55 +1412,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -481,55 +1612,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -538,55 +1812,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -595,55 +2012,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
          },
@@ -652,55 +2212,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -709,55 +2412,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
          },
@@ -766,55 +2612,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -825,55 +2814,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -882,55 +3014,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -939,55 +3214,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -996,55 +3414,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1053,55 +3614,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1110,59 +3814,401 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
-        { id: 'e7', title: 'Financial Management', icon: '💰', color: '#fce7f3', accent: '#db2777',},
+        { id: 'e7', title: 'Financial Management', icon: '💰', color: '#fce7f3', accent: '#db2777',
+            content: {
+                chapters: [
+                    {
+                        num: 1, title: "", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                quizzes: [
+                    {
+                        num: 1, title: "Quizzes - Part 1", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
+                        ]
+                    },
+                ],
+                sections: [
+                    {
+                        num: 1, title: "Section", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
+                        ]
+                    },
+                ],
+                summaries: [
+                    {
+                        num: 1, title: "Summarie", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                qa: [
+                    {
+                        num: 1, title: "", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        num: 2, title: "", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
+                        ]
+                    },
+                ],
+                finalReview: [
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
     ],
     statistics: [
         { id: 's1', title: 'Applied Statistics (1)', icon: '📉', color: '#dbeafe', accent: '#2563eb',
@@ -1170,55 +4216,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1227,55 +4416,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1284,55 +4616,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
          },
@@ -1341,55 +4816,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1398,55 +5016,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1455,55 +5216,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1512,55 +5416,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1571,55 +5618,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1628,55 +5818,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1685,55 +6018,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1742,55 +6218,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1799,55 +6418,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1856,55 +6618,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -1913,55 +6818,198 @@ const MATERIALS = {
                 chapters: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 101, title: "", type: "pdf", url:"" },
-                            // { id: 102, title: "", type: "video", url: "" },
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 101, title: "", type: "pdf", url: "" },
+                                    // { id: 102, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 103, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 104, title: "", type: "video", url: "" }
+                                ]
+                            }
                         ]
-                    },
-
+                    }
                 ],
                 quizzes: [
                     {
                         num: 1, title: "Quizzes - Part 1", time: "",
-                        lectures: [
-                            // { id: 1001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 1001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 1002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 1003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 sections: [
                     {
                         num: 1, title: "Section", time: "",
-                        lectures: [
-                            // { id: 2001, title: "", type: "pdf", url: "" },
-
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 2001, title: "", type: "pdf", url: "" },
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 2002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 2003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 summaries: [
                     {
                         num: 1, title: "Summarie", time: "",
-                        lectures: [
-                            // { id: 3001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 3001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 3002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 3003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     }
                 ],
                 qa: [
                     {
                         num: 1, title: "", time: "",
-                        lectures: [
-                            // { id: 4001, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4001, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4002, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4003, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                     {
                         num: 2, title: "", time: "",
-                        lectures: [
-                            // { id: 4002, title: "", type: "pdf", url: "" }
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 4004, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 4005, title: "", type: "pdf", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 4006, title: "", type: "pdf", url: "" }
+                                ]
+                            }
                         ]
                     },
                 ],
                 finalReview: [
-                    // الداتا الخاصة بالمراجعة النهائية هتتضاف هنا
+                    {
+                        num: 1, title: "Final Review", time: "",
+                        weeks: [
+                            {
+                                num: 1,
+                                title: "",
+                                lectures: [
+                                    // { id: 5001, title: "", type: "pdf", url: "" },
+                                    // { id: 5002, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 2,
+                                title: "",
+                                lectures: [
+                                    // { id: 5003, title: "", type: "video", url: "" }
+                                ]
+                            },
+                            {
+                                num: 3,
+                                title: "",
+                                lectures: [
+                                    // { id: 5004, title: "", type: "video", url: "" }
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -2040,70 +7088,131 @@ const DEFAULT_SECTION_DATA = {
     chapters: [
         {
             num: 1, title: "Introduction & Basic Concepts", time: "2h 15m",
-            lectures: [
-                // { id: 101, title: " Overview", type: "pdf", url: "" },
-                // { id: 102, title: " First Principles", type: "pdf", url: "" }
+            weeks: [
+                {
+                    num: 1,
+                    title: "",
+                    lectures: [
+                        // { id: 101, title: " Overview", type: "pdf", url: "" },
+                        // { id: 102, title: " First Principles", type: "pdf", url: "" }
+                    ]
+                }
             ]
         },
         {
             num: 2, title: "The Core Framework", time: "3h 40m",
-            lectures: [
-                // { id: 201, title: "Lec 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
-                // { id: 202, title: "Lec 4: Review Questions", type: "pdf", url: "" }
+            weeks: [
+                {
+                    num: 1,
+                    title: "",
+                    lectures: [
+                        // { id: 201, title: "Lec 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
+                        // { id: 202, title: "Lec 4: Review Questions", type: "pdf", url: "" }
+                    ]
+                }
             ]
         }
     ],
     quizzes: [
         {
             num: 1, title: "Quiz Set 1", time: "2h 15m",
-            lectures: [
-                // { id: 1001, title: "Overview", type: "pdf", url: "" },
-                // { id: 1002, title: "Quiz 2: First Principles", type: "pdf", url: "" }
+            weeks: [
+                {
+                    num: 1,
+                    title: "",
+                    lectures: [
+                        // { id: 1001, title: "Overview", type: "pdf", url: "" },
+                        // { id: 1002, title: "Quiz 2: First Principles", type: "pdf", url: "" }
+                    ]
+                }
             ]
         },
         {
             num: 2, title: "Quiz Set 2", time: "3h 40m",
-            lectures: [
-                // { id: 1003, title: "Quiz 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
-                // { id: 1004, title: "Quiz 4: Review Questions", type: "pdf", url: "" }
+            weeks: [
+                {
+                    num: 1,
+                    title: "",
+                    lectures: [
+                        // { id: 1003, title: "Quiz 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
+                        // { id: 1004, title: "Quiz 4: Review Questions", type: "pdf", url: "" }
+                    ]
+                }
             ]
         }
     ],
     sections: [
         {
             num: 1, title: "Section Set 1", time: "2h 15m",
-            lectures: [
-                // { id: 2001, title: "Overview", type: "pdf", url: "" },
-                // { id: 2002, title: "Section 2: First Principles", type: "pdf", url: "" }
+            weeks: [
+                {
+                    num: 1,
+                    title: "",
+                    lectures: [
+                        // { id: 2001, title: "Overview", type: "pdf", url: "" },
+                        // { id: 2002, title: "Section 2: First Principles", type: "pdf", url: "" }
+                    ]
+                }
             ]
         },
         {
             num: 2, title: "Section Set 2", time: "3h 40m",
-            lectures: [
-                // { id: 2003, title: "Section 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
-                // { id: 2004, title: "Section 4: Review Questions", type: "pdf", url: "" }
+            weeks: [
+                {
+                    num: 1,
+                    title: "",
+                    lectures: [
+                        // { id: 2003, title: "Section 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
+                        // { id: 2004, title: "Section 4: Review Questions", type: "pdf", url: "" }
+                    ]
+                }
             ]
         }
     ],
     summaries: [
         {
             num: 1, title: "Summaries - Part One", time: "30m",
-            lectures: [
-                // { id: 3001, title: "Summary 1: Basics", type: "pdf", url: "" },
-                // { id: 3002, title: "Summary 2: Core Concepts", type: "pdf", url: "" }
+            weeks: [
+                {
+                    num: 1,
+                    title: "",
+                    lectures: [
+                        // { id: 3001, title: "Summary 1: Basics", type: "pdf", url: "" },
+                        // { id: 3002, title: "Summary 2: Core Concepts", type: "pdf", url: "" }
+                    ]
+                }
             ]
         }
     ],
     qa: [
         {
             num: 1, title: "Q&A - Part One", time: "",
-            lectures: [
-                // { id: 4001, title: "Q&A 1: Basics", type: "pdf", url: "" },
-                // { id: 4002, title: "Q&A 2: Core Concepts", type: "pdf", url: "" }
+            weeks: [
+                {
+                    num: 1,
+                    title: "",
+                    lectures: [
+                        // { id: 4001, title: "Q&A 1: Basics", type: "pdf", url: "" },
+                        // { id: 4002, title: "Q&A 2: Core Concepts", type: "pdf", url: "" }
+                    ]
+                }
             ]
         }
     ],
-    finalReview: []
+    finalReview: [
+        {
+            num: 1, title: "Final Review", time: "",
+            weeks: [
+                {
+                    num: 1,
+                    title: "",
+                    lectures: [
+                        // { id: 5001, title: "Review 1", type: "pdf", url: "" }
+                    ]
+                }
+            ]
+        }
+    ]
 };
 
 // Fallback alias for backward compatibility
